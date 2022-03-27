@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+
 function MenuItem(props){
+  var link = `/${props.link}`
   return (
     <li>
-      <a href={props.link}>{props.name}</a>
+      <Link to={link}>{props.name}</Link>
     </li>
   )
 }

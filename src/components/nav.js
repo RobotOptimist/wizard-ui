@@ -1,7 +1,7 @@
 import MenuItem from "./menuItem";
 
 function Nav(props) {
-  const menuItems = props.menuItems.map(mi => <MenuItem link="#" name={mi.name}/>)
+  const menuItems = props.menuItems.map(mi => <MenuItem link={mi.link} name={mi.name}/>)
   return (
     <nav>
       <ul>

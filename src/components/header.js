@@ -1,12 +1,15 @@
 import Nav from "./nav";
 const menuItems = [
   {
+    "link": "",
     "name": "Home"
   },
   {
+    "link": "wizard-details",
     "name": "Wizard Details"
   },
   {
+    "link": "create-wizard",
     "name": "Create Wizard"
   }
 ]
