@@ -19,7 +19,7 @@ function Nav(props) {
       <ul>
         {menuItems}
         <li>
-          <a href="https://wizard-potion-app.azurewebsites.net/.auth/login/github">Login</a>
+          <a href="/.auth/login/github">Login</a>
         </li>
         <li>
           <button onClick={fetchWizzFizz}>Get WizFizzz</button>
