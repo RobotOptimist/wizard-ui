@@ -6,7 +6,7 @@ function fetchWizzFizz() {
     console.log('do what boss?')
     if (response.status === 401) {
       console.log('yeah boss')
-      window.location.href = "https://github.com/login/oauth/authorize?client_id=b67edb7ad8d07863e5ed&redirect_uri=https://wizard-potion-app.azurewebsites.net/.auth/login/github/callback"
+      //window.location.href = "https://github.com/login/oauth/authorize?client_id=b67edb7ad8d07863e5ed&redirect_uri=https://wizard-potion-app.azurewebsites.net/.auth/login/github/callback"
     }
   })
   .then((data) => console.log(data));
@@ -19,8 +19,11 @@ function Nav(props) {
       <ul>
         {menuItems}
         <li>
-          <button onClick={fetchWizzFizz}>Get WizzFizz</button>
-         </li>
+          <a href="https://wizard-potion-app.azurewebsites.net/.auth/login/github">Login</a>
+        </li>
+        <li>
+          <button onClick={fetchWizzFizz}>Get WizFizzz</button>
+        </li>
       </ul>
     </nav>
   )
